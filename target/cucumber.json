@@ -1,0 +1,194 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6069199274,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "gets to home page",
+            "match": {
+              "location": "SearchStepDefs.gets_to_home_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 12,
+        "name": "",
+        "description": "",
+        "id": "typed-words-in-text-box-it-should-suggest-words-that-matches-typed-keyword.-when-user-start;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4225965551,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user searches \"san\" in search field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "san",
+                  "offset": 15
+                }
+              ],
+              "location": "SearchStepDefs.user_searches_in_search_field(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 345451054,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "suggestions dropdown items should contain \"san\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "san",
+                  "offset": 43
+                }
+              ],
+              "location": "SearchStepDefs.suggestions_dropdown_items_should_contain(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 68608733,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user selects option 3 from the list",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 20
+                }
+              ],
+              "location": "SearchStepDefs.user_selects_option_from_the_list(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 149775930,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "clicks on reward programs",
+            "match": {
+              "location": "SearchStepDefs.clicks_on_reward_programs()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected [true] but found [false]\n\tat org.testng.Assert.fail(Assert.java:96)\n\tat org.testng.Assert.failNotEquals(Assert.java:776)\n\tat org.testng.Assert.assertTrue(Assert.java:44)\n\tat org.testng.Assert.assertTrue(Assert.java:54)\n\tat step_definitions.SearchStepDefs.user_sees_list_of_programs(SearchStepDefs.java:99)\n\tat ✽.user sees list of \"Popular\" programs(./src/test/resources/features/Search.feature:17)\n",
+              "duration": 1388663741,
+              "status": "failed"
+            },
+            "line": 17,
+            "name": "user sees list of \"Popular\" programs",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Popular",
+                  "offset": 19
+                }
+              ],
+              "location": "SearchStepDefs.user_sees_list_of_programs(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "user verifies the list is sorted",
+            "match": {
+              "location": "SearchStepDefs.user_verifies_the_list_is_sorted()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "user sees list of \"All\" programs",
+            "match": {
+              "arguments": [
+                {
+                  "val": "All",
+                  "offset": 19
+                }
+              ],
+              "location": "SearchStepDefs.user_sees_list_of_programs(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "user verifies the list is sorted",
+            "match": {
+              "location": "SearchStepDefs.user_verifies_the_list_is_sorted()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "list of \"Popular\" programs contains \"Amazon.com Gift Card\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Popular",
+                  "offset": 9
+                },
+                {
+                  "val": "Amazon.com Gift Card",
+                  "offset": 37
+                }
+              ],
+              "location": "SearchStepDefs.list_of_programs_contains(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test"
+          }
+        ]
+      }
+    ],
+    "name": "Typed words in text box it should suggest words that matches typed keyword. When user start",
+    "description": "  typing word in text box it should suggest words that matches typed keyword",
+    "id": "typed-words-in-text-box-it-should-suggest-words-that-matches-typed-keyword.-when-user-start",
+    "keyword": "Feature",
+    "uri": "./src/test/resources/features/Search.feature",
+    "tags": []
+  }
+]
